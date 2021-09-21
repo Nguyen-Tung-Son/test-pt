@@ -131,7 +131,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202109210148526_IntialCreate.cs" />
+    <Compile Include="Migrations\202109210148526_IntialCreate.designer.cs">
+      <DependentUpon>202109210148526_IntialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202109210213136_IntialCreate1.cs" />
+    <Compile Include="Migrations\202109210213136_IntialCreate1.designer.cs">
+      <DependentUpon>202109210213136_IntialCreate1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Account.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\LTQLDbContext.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -188,6 +198,14 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202109210148526_IntialCreate.resx">
+      <DependentUpon>202109210148526_IntialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202109210213136_IntialCreate1.resx">
+      <DependentUpon>202109210213136_IntialCreate1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
